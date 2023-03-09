@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background: url('Images/3583126.jpg') no-repeat center center/cover;
+    height: 450px;
+}
+.Login-page{
+    border: 2px solid black;
+    /* text-align: center; */
+    border: 3px solid  #162938;
+    background:transparent;
+    width: 450px;
+    height: 150px;
+    border-radius: 20px;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 30 rgba(0, 0, 0, 0.5);
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 159px;
+}
+.Login-page>h4{
+    font-family: 'poppins';
+    font-size: 1.5em;
+    color: #132330;
+    text-align: center;
+}
+.submit_button{
+    width: 20%;
+    height: 30px;
+    background: #162938;
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+    transition: all 0.3s;
+}
+.submit_button:hover{
+    background: #28475e;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px black;
+}

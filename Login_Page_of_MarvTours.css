@@ -94,6 +94,9 @@ body{
     font-size: 15px;
     font-weight: bold;
 }
+.btn_sign_up>a{
+    color: #132330;
+}
 .btn_sign_up:hover{
     text-decoration: underline;
     cursor: pointer;
