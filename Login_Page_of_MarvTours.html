@@ -9,9 +9,35 @@
     <link rel="stylesheet" href="Login_Page_of_MarvTours.css">
 </head>
 <body>
-     <form action="#" class="login-form">
-        <label for="name">Email</label>
-        <input type="text">
-     </form>
+    <div class="login-container">
+    <form action="#" class="Login-page">
+    <h2>Login</h2>
+            <div class="input-box">
+                <input type="email" name ='Name' placeholder="" required="required" autocomplete="off">
+                <span>E-mail</span>
+                <ion-icon name="mail"></ion-icon>
+
+            </div>
+            <div class="input-box">
+                <input type="password" name ='Name1' placeholder=""  required="required" autocomplete="off">
+                <span>Password</span>
+                <ion-icon name="lock-closed"></ion-icon>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forget Password</a>
+            
+            <span class="sign_up">
+                Don't have an account
+            </span>
+            <button class="btn_sign_up">Register Now</button>
+        
+        </div>
+            <button class="submit_button">
+                Submit
+            </button>
+    </form>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

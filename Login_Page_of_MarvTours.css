@@ -1,5 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body{
     background: url('Images/login_background.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 159px;
+}
+.Login-page>h2{
+    font-size: 2em;
+    color: #132330;
+    text-align: center;
+}
+.Login-page{
+    border: 2px solid black;
+    /* text-align: center; */
+    border: 3px solid  #162938;
+    background:transparent;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 30 rgba(0, 0, 0, 0.5);
+}
+.input-box{
+    /* background: transparent; */
+    position: relative;
+    width: 300px;
+    height: 45px;
+    border-bottom: 2px solid #162938;
+    /* padding-left: 5px; */
+    /* width: 90%;
+    height: 37px; */
+    margin: 21px 0px;
+}
+.input-box input{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+.input-box span{
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    display: inline-block;
+    color: #f9f8fc;
+    font-weight: bold;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span
+{
+    transform: translateX(-10px) translateY(-24px);
+    font-size: 14px;
+}
+.forgot-password >a {
+    text-decoration: none;
+    color: #a589f9;
+}
+.forgot-password >a:hover{
+    text-decoration: underline;
+}
+.sign_up{
+    margin-left: 80px;
+}
+.btn_sign_up{
+    background: transparent;
+    backdrop-filter: blur(8px);
+    outline: none;
+    border: none;
+    margin-left: 290px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn_sign_up:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.submit_button{
+    width: 50%;
+    height: 50px;
+    background: #162938;
+    position: relative;
+    top: 30px;
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    transition: all 0.3s;
+}
+.submit_button:hover{
+    background: #28475e;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px black;
+}
+ion-icon{
+    position: relative;
+    bottom: 30px;
+    left: 280px;
+    font-size: 20px;
 }
