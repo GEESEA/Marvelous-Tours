@@ -291,9 +291,9 @@ section[id="none"]{
     gap: 1rem 1rem;
     /* justify-content: center; */
     grid-template-areas:
-    'image1 image1 text1 text1'
-    'image2 image2 text2 text2'
-    'image3 image3 text3 text3';
+    'image1 text1 '
+    'image2 text2 '
+    'image3 text3 ';
     position: relative;
     bottom: 109px;
 }
