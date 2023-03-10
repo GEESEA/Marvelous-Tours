@@ -80,7 +80,10 @@
     text-align: center;
 }
 input[type="date"]{
-    color: transparent;
+    color: #162938;
+    font-size: 15px;
+    position: relative;
+    top: 5px;
 }
 .input-box input:focus ~ span,
 .input-box input:valid ~ span

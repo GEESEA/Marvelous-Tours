@@ -40,6 +40,11 @@ body{
     margin: auto;
     transition: all 0.3s;
 }
+.submit_button>a{
+    color:white;
+    font-weight:bold;
+    text-decoration: none;
+}
 .submit_button:hover{
     background: #28475e;
     cursor: pointer;
