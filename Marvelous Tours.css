@@ -12,7 +12,7 @@
 }
 #Home:before{
     content: " ";
-    background: url('Images/background2.jpg') no-repeat center center/cover;
+    background: url('Images/background3.jpg') no-repeat center center/cover;
     position: relative;
     bottom: -88px;
     /* right: 769px; */
@@ -270,6 +270,7 @@ section[id="none"]{
 #services{
     position: relative;
     top: -68px;
+    /* background:black; */
     /* height: 600px; */
     /* text-align: center; */
     /* background: url('bg2.jpg') no-repeat center center/cover; */
@@ -277,7 +278,6 @@ section[id="none"]{
 }
 #services:before{
     content: " ";
-    background: url('bg2.jpg') no-repeat center center/cover;
     height: 800px;
     width: 100%;
     z-index: -1;
