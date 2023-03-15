@@ -141,7 +141,7 @@ img[src='Images/logo.png']{
     transition: all 0.5s ease-in-out;
 }
 img[src='Images/logo.png']:hover{
-    box-shadow:5px 5px 10px  black;
+    box-shadow:0px 0px 40px  black;
 }
 .navbar{
     position: relative;
@@ -194,7 +194,7 @@ img[src='Images/logo.png']:hover{
 
     .navbar button:hover{
         background-color: white;
-        box-shadow: 6px 6px 6px black;
+        box-shadow: 0px 0px 30px black;
     }
 
 /* Section section  */
@@ -226,7 +226,7 @@ section[id="none"]{
     overflow: hidden;
 }
 .dynamic-text li{
-    color:rgb(69, 2, 56);
+    color:rgb(254, 254, 254);
     list-style: none;
     font-size: 28px;
     font-weight:bold;
