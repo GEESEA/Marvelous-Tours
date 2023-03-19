@@ -320,7 +320,7 @@ img[src='image1.jpg']{
     height: 300px;
 }
 #image2{
-    margin-left: 400px;
+    margin-left: 350px;
     margin-top: 100px;
     grid-area:image2;
     width: 400px;
@@ -337,7 +337,7 @@ img[src='image1.jpg']{
     grid-area:image3;
     background: url('https://trips.klarnacdn.net/images/trip-benefits-3-new.png') no-repeat center center/cover;
     background-size: contain;
-    margin-left:400px;
+    margin-left:300px;
     margin-top: 100px;
 }
 #text3{
@@ -510,4 +510,11 @@ a>ion-icon{
         display: none;
     }
     
+}
+
+@media(min-width:1000px) and (max-width:1496px){
+    #Home:before{
+    background-size: cover;
+    viewport-fit: cover;
+    }
 }
