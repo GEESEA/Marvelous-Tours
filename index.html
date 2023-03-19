@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" media ="screen and (max-width: 1208px)"href="responsive.css">
 </head>
 <body>
     <div class="website">
@@ -22,11 +23,11 @@
             <img src="Images/logo.png" alt="logo">
         </div>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Travel guide</a>
-            <a href="#">Hotels</a>
-            <a href="#">Services</a>
-            <a href="#">Contact Us</a>
+            <a href="#1">Home</a>
+            <a href="#2">Travel guide</a>
+            <a href="#3">Hotels</a>
+            <a href="#4">Services</a>
+            <a href="#5">Contact Us</a>
         <button class="btn"><a href="Sign_Up_page.html">Sign Up</a></button>
         <button class="btn" ><a href="Login_Page_of_MarvTours.html">Login</a></button>
     </nav>
@@ -52,18 +53,18 @@
                 <ion-icon name="airplane-outline" class="icon"></ion-icon></div>
                 
             <div class="input-box">
-                <input type="date" name ='Name1' placeholder="" required="required">
+                <input type="date" id ='Name1' placeholder="" required="required">
                 <span class="label">Start-date</span></div>
             
             <div class="input-box">
-                <input type="date" name ='Name2' placeholder="" required="required">
+                <input type="date" id ='Name2' placeholder="" required="required">
                 <span class="label">End-date</span></div>
 
             <div class="input-box">
                 <input type="number" name ='Name3' placeholder="" required="required">
                 <span class="label">Number of Guests</span>
                 <ion-icon name="accessibility-outline" class="icon"></ion-icon></div>
-                <button class="btn">See Your Trip</button>
+                <button class="btn"><a href ="anotherpage.html">See Your Trip</a></button>
         </form>
     </section>
 <section id="services">
@@ -121,9 +122,9 @@
         <div class="subhead">follow us on:</div>
         <div class="socialicon">
         <span><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></span>
-        <span><a href="https://twitter.com/" target="_blank"><ion-icon  name="logo-twitter"></ion-icon></a></span>
+        <span><a href="https://twitter.com/img_iitr" target="_blank"><ion-icon  name="logo-twitter"></ion-icon></a></span>
         <span><a href="https://linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></span>
-        <span><a href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></span></div>
+        <span><a href="https://instagram.com/img_iitr" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></span></div>
     </div>
     <div class="dabba" id="seconddabba">
         <ul class="footer-list">
@@ -198,5 +199,12 @@ Some links are affiliate links and Marvelous Tours may earn a commission.
         loop: true
     }) -->
 </script>
+<!-- <script>
+    var date1 = document.getElementById('Name1').value;
+    var date2 = document.getElementById('Name2').value;
+    const diffTime = Math.abs(date2-date1);
+    const diffDays= Math.ceil(diffTime/ (1000 * 60 * 60 * 24));
+    document.getElementById('content').innerHTML = 'diffDays';
+</script> -->
 </body>
 </html>
