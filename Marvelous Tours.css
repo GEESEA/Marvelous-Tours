@@ -7,6 +7,9 @@
     font-weight: bolder;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 #Home{
     height: 500px;
 }
@@ -306,10 +309,10 @@ section[id="none"]{
     grid-area:image1;
     width: 500px;
     height: 500px;
-    margin-left:150px;
+    margin-left:80px;
 }
 img[src='image1.jpg']{
-    margin-left: 100px;
+    margin-left: 80px;
     height: 500px;
     width: 400px;
 }
@@ -318,6 +321,7 @@ img[src='image1.jpg']{
     grid-area:text1;
     width: 500px;
     height: 300px;
+    margin-left: 150px;
 }
 #image2{
     margin-left: 350px;
@@ -466,55 +470,85 @@ a>ion-icon{
 .bottom-foot>li>a:hover{
     color:rgb(61, 61, 246);
     font-weight: 400;
-}
-
-@media(max-width:300px){
-    #Home:before{
-        display: block;
-        width: 100%;
-        height: 674px;
-        /* background-position: center; */
-        /* transform:scale(1.75); */
-    }
-    #Home{
-        width: 967px;
-    }
-    img[src='Images/logo.png']{
-        height: 100px;
-        width: 130px;
-        display: block;
-        position: relative;
-        left: 346px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navbar{
-        width:1206px;
-    }
-    .footer{
-        display: none;
-    }
-    header{
-        width: 872.2px;
-    }
-    .navbar>a{
-        font-size: 32px;
-        top: 125px;
-        right: 50px;
-    }
-    a[href="#2"],a[href="#3"]{
-        display: none;
-    }
-    button[href="Sign_Up_page.html"]{
-        display: none;
-    }
     
 }
 
-@media(min-width:1000px) and (max-width:1496px){
-    #Home:before{
-    background-size: cover;
-    viewport-fit: cover;
+@media(max-width:300px){
+    #Home{
+        height: 400px;
     }
+    #Home:before{
+    height: 600px;
+    width:1580px;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+    }
+}
+
+@media(min-width:1000px) and (max-width:1496px){
+    #Home{
+        height: 400px;
+    }
+    #Home:before{
+    height: 600px;
+    width:1580px;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+    }
+}
+
+@media (min-width:700px) and (max-width:1000px){
+    #Home{
+        height: 400px;
+    }
+    #Home:before{
+        height: 700px;
+        width:1580px;
+        }
+    body{
+        display: flex;
+        height: 100vh;
+    }
+}
+
+@media(min-width:500px) and (max-width:700px){
+    #Home{
+        height: 400px;
+    }
+    #Home:before{
+        height: 700px;
+        width:1580px;
+        }
+    body{
+        display: flex;
+        height: 100vh;
+    }
+    .services{
+        grid-template-areas:
+    'image1 text1 '
+    'image2 text2 '
+    'image3 text3 ';
+    }
+}
+@media(min-width:300px) and (max-width:500px){
+    #Home{
+        height: 400px;
+    }
+    #Home:before{
+        height: 700px;
+        width:1580px;
+        }
+    body{
+        display: flex;
+        height: 100vh;
+    }
+    
+}
+.bgcolor{
+    background-image: linear-gradient(to right,black,grey,white);
+    transition: all 1s ease-in;
 }

@@ -2,8 +2,7 @@
     var date2 = document.getElementById('Name2').value;
     const diffTime = Math.abs(date2-date1);
     const diffDays= Math.ceil(diffTime/ (1000 * 60 * 60 * 24));
-    console.log('diffDays');
-    document.getElementById('content').innerHTML = '<h1>Hello are you</h1>';
+    console.log(diffDays);
 
     window.addEventListener('scroll',reveal);
 
@@ -23,3 +22,15 @@
 //         }
 //     }
 // }
+function ChangeBg(){
+    var navbar = document.getElementById('navbar');
+    var scrollvalue = window.scrollY;
+    if (scrollvalue<150){
+        navbar.classList.remove('bgcolor');
+    }
+    else{
+        navbar.classList.add('bgcolor');
+    }
+}
+
+window.addEventListener('scroll',ChangeBg);
